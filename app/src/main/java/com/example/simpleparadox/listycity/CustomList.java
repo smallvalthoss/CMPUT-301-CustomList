@@ -51,6 +51,14 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
+    /**
+     * removes the city "city"
+     * @param city the city to remove
+     */
+    public void deleteCity(City city) {
+//        cities.remove(city);
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
