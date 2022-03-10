@@ -25,14 +25,30 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
-
+    /**
+     * gets the number of cities in the list of cities
+     * @return
+     */
     public int getCount() {
         return cities.size();
     }
 
+    /**
+     * adds a city to the list of cities
+     * @param city
+     */
     public void addCity(City city) {
         cities.add(city);
         return;
+    }
+
+    /**
+     * checks if the city city is in the list of cities
+     * @param city to add
+     * @return true if the city is in the list, false otherwise
+     */
+    public boolean hasCity(City city) {
+        return false;
     }
 
     @NonNull
