@@ -59,6 +59,14 @@ public class CustomList extends ArrayAdapter<City> {
         cities.remove(city);
     }
 
+    /**
+     * counts the number of cities in the list of cities
+     * @return the count of cities
+     */
+    public int countCities() {
+        return -1;
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
